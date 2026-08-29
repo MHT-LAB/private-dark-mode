@@ -1,5 +1,7 @@
 # Private Dark Mode
 
+![Private Dark Mode — smart-invert dark mode for any site, no accounts, no analytics, no network requests](banner.png)
+
 A small Chrome extension that forces a dark theme on every site you visit.
 
 It exists for one reason: most dark-mode extensions ask for permission to
@@ -65,12 +67,27 @@ applying to whatever content the app swaps in underneath.
 
 ## Installing it (unpacked, for your own use)
 
+New to GitHub? "Installing" a repo like this one just means getting a copy
+of its files onto your computer — there's nothing to run or execute on its
+own. Two ways to do that:
+
+- **Download ZIP** — easiest, no git required. On this page, click the
+  green **Code** button near the top → **Download ZIP** → unzip it
+  somewhere you'll remember (e.g. your Documents folder).
+- **`git clone`** — if you have git installed, open a terminal and run:
+  ```
+  git clone https://github.com/MHT-LAB/private-dark-mode.git
+  ```
+  This also gives you the full commit history and makes it a one-line
+  `git pull` to grab future updates, instead of re-downloading a ZIP.
+
+Either way, you end up with a `private-dark-mode` folder on your machine.
 Chrome extensions installed this way don't need to go through the Web
 Store at all:
 
 1. Open `chrome://extensions`.
 2. Turn on **Developer mode** (top-right toggle).
-3. Click **Load unpacked** and select this folder.
+3. Click **Load unpacked** and select the `private-dark-mode` folder.
 4. Pin it from the puzzle-piece icon in the toolbar if you want it
    visible at all times.
 
