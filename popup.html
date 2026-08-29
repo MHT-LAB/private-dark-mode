@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Private Dark Mode</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img src="icons/icon32.png" alt="" width="20" height="20" />
+      <h1>Private Dark Mode</h1>
+    </header>
+
+    <section class="row">
+      <div class="row-text">
+        <div class="row-title">This site</div>
+        <div class="row-sub" id="hostname">—</div>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="site-toggle" />
+        <span class="slider"></span>
+      </label>
+    </section>
+
+    <button id="reset-link" class="link-btn" hidden>Reset to default for this site</button>
+
+    <hr />
+
+    <section class="row">
+      <div class="row-text">
+        <div class="row-title">Default for new sites</div>
+        <div class="row-sub">Applies to sites without their own setting</div>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="global-toggle" />
+        <span class="slider"></span>
+      </label>
+    </section>
+
+    <footer>
+      Everything above is stored only on this device. No accounts, no
+      analytics, no network requests.
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
