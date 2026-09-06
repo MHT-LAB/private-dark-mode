@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Private Dark Mode",
-  "version": "1.1.1",
+  "version": "1.1.0",
   "description": "Forces a dark theme on every site you visit. No accounts, no analytics, no network requests — everything stays on your device.",
   "author": "Dustin Ramsey",
 

@@ -24,21 +24,6 @@ img, picture, video, canvas, svg, iframe, embed, object,
 [style*="background-image"], [style*="background: url"] {
   filter: invert(1) hue-rotate(180deg) !important;
 }
-
-/* Fullscreen (native <video>, or a site's own fullscreen player wrapper
-   like YouTube/Netflix) is rendered in the browser's top layer, outside
-   the box that the "html" rule above visually covers. The video-specific
-   invert rule right above this still matches the element though, so
-   without this override it shows up singly inverted instead of the two
-   filters cancelling back out to normal color -- a washed-out,
-   translucent look. Zero out filter on the fullscreen element and
-   everything inside it so fullscreen video renders at true color. */
-:fullscreen,
-:fullscreen *,
-:-webkit-full-screen,
-:-webkit-full-screen * {
-  filter: none !important;
-}
 `;
 
 const DEFAULTS = {
